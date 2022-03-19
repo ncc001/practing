@@ -33,9 +33,9 @@ body {
   z-index: 1;
   margin-bottom: 0.625em;
   position: sticky;
-  width: 100vw;
+  width: 99vw;
   overflow: hidden;
-  top: 0;
+ 
 }
 #header-img {
   width: 2.5em;
