@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
     <title>Documentation Page</title>
     <link rel="stylesheet" href="style.css" />
     <link
@@ -14,59 +15,212 @@
   <body>
     <div class="conteiner">
       <nav class="nav-bar" id="navbar">
-        <header>Lorem ipsum dolor sit.</header>
+        <header class="textonav">JavaScript</header>
         <ul>
           <li>
-            <a href="#primera-seccion" class="nav-link">primera seccion</a>
+            <a href="#Introduccion" class="nav-link">Introduccion</a>
           </li>
-          <li><a href="" class="nav-link">segunda seccion</a></li>
-          <li><a href="" class="nav-link"></a> 3</li>
-          <li><a href="" class="nav-link"></a> 4</li>
-          <li><a href="" class="nav-link"></a>5</li>
-          <li><a href="" class="nav-link"></a>6</li>
+          <li>
+            <a href="#Que_es_JavaScript" class="nav-link">Que es JavaScript</a>
+          </li>
+          <li>
+            <a href="#evolucion_de_javascript" class="nav-link"
+              >Evolucion de JavaScript</a
+            >
+          </li>
+          <li><a href="#caracteriticas_de_javascript" class="nav-link">Caracteristicas de JavaScript</a></li>
+          <li><a href="#fundamentos" class="nav-link">Fundamentos</a></li>
+          <li><a href="#conceptos-basicos" class="nav-link">Conceptos basico</a></li>
+          <li><a href="#switch" class="nav-link">Switch</a></li>
+          
         </ul>
       </nav>
 
       <main id="main-doc">
-        <section class="main-section" id="primera-seccion">
-          <header>primera seccion</header>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-          <code>1234</code>
+        <section class="main-section" id="Introduccion">
+          <header>Introduccion</header>
+          <p>
+            Para muchas personas JavaScript es el amigo oculto de la web, para
+            una gran parte de desarrolladores es la navaja suiza que hace de la
+            web que ves y disfrutas algo posible. Actualmente es uno de los
+            lenguajes de programación más demandado y se encuentra presente en
+            prácticamente cualquier aplicación web. 
+          </p>
+         <br />
+          <p>
+            Empresas como Google o Facebook han desarrollado incluso sus propias
+            implementaciones basadas en este lenguaje para lograr por ejemplo
+            una experiencia visual del usuario más atractiva al momento de
+            actualizar tus estados. Veamos en este artículo el porqué de su
+            éxito y sus fundamentos y características
+          </p>
+          
         </section>
-        <section class="main-section" id="segunda-seccion">
-          <header>segunda seccion</header>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-          <code>1234</code>
+        <section class="main-section" id="Que_es_JavaScript">
+          <header>Que es JavaScript</header>
+          <p>
+            JavaScript se introdujo en 1995 como una forma de agregar programas
+            a páginas web en el navegador Netscape Navigator. En su momento fue
+            una idea novedosa. En los primeros días de la World Wide Web, HTML
+            era bastante simple, y bastante fácil de aprender casi todo lo que
+            se necesitaba saber para agrupar páginas web. Cualquiera podía hacer
+            una Web juntando tablas, texto y añadiendo alguna imagen
+          </p> <br>
+
+          <p>
+            A principios de los años 90, la mayoría de usuarios que se
+            conectaban a Internet lo hacían con módems a una velocidad máxima de
+            28.8 kbps. Esa velocidad era más que suficiente para la época salvo
+            que quisieras descargar imagenes de cierto tamaño. Lo cierto era que
+            la web en aquel entonces no ofrecía gran cosa más que servir como
+            una inmensa biblioteca donde los usuarios consultaban mayormente
+            contenido basado en texto pero la evolución que conocemos hoy estaba
+            por llegar y podían verse los primeros pasos.
+          </p><br>
         </section>
-        <section class="main-section" id="tercera-seccion">
-          <header>tercera seccion</header>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-          <code>1234</code>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-          <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>4</li>
+        <section class="main-section" id="evolucion_de_javascript">
+          <header>Evolución de JavaScript</header>
+          <p>
+            Aunque JavaScript surgió como un lenguaje de script para mejorar las
+            capacidades de la web de la época allá por 1995 por la extinta
+            Netscape, JavaScript no ha dejado de evolucionar desde entonces.
+            Originalmente el lenguaje se basaba a su vez basaba en CEnvi
+            desarrollado a su vez por Nombas.
+          </p> <br>
+          
+          <p>
+            Brendan Eich, un programador que trabajaba en Netscape, pensó que
+            podría solucionar las limitaciones de la web de entonces, adaptando
+            otras tecnologías existentes (como ScriptEase) al navegador Netscape
+            Navigator 2.0, que iba a lanzarse en aquel año. Inicialmente, Eich
+            denominó a su lenguaje LiveScript y fue un éxito..
+          </p> <br>
+
+          <p>
+            Fue entonces cuando, justo antes del lanzamiento, Netscape decidió
+            cambiar el nombre por el de JavaScript y firmó una alianza con Sun
+            Microsystems para continuar el desarrollo del nuevo lenguaje de
+            programación. Microsoft, al ver el movimiento de uno de sus
+            principales competidores, también decidió incorporar su propia
+            implementación de este lenguaje, llamada JScript, en la versión 3 de
+            su navegador Internet Explorer.
+          </p><br>
+
+          <p>
+            Esto contribuyó todavía más al empuje y popularización del lenguaje,
+            pero comenzaron a presentarse pequeños problemas por las diferencias
+            entre implementaciones. Por lo que se decidió estandarizar ambas
+            mediante la versión JavaScript 1.1 como propuesta a ECMA, que
+            culminó con el estándar ECMA-262. Este estándar dicta la base del
+            lenguaje ECMAScript a través de su sintaxis, tipos, sentencias,
+            palabras clave y reservadas, operadores y objetos, y sobre la cual
+            se pueden construir distintas implementaciones. La versión
+            JavaScript 1.3 fue la primera implementación completa del estándar
+            ECMAScript.
+            
+          </p> <br>
+
+          <p>
+            ECMAScript 3, que data de 1999, y cuyas últimas mejoras han sido:
+          </p>
+          <ul >
+            <li class="listsect">Soporte de expresiones regulares.</li>
+            <li class="listsect">Nuevas sentencias de control.</li>
+            <li class="listsect">Manejo de excepciones (bloque try-catch). .</li>
+            <li class="listsect">Definición de errores más precisa.</li>
+            <li class="listsect">Formateo de salidas numéricas de datos.</li>
+            <li class="listsect">Manejo de strings más avanzado.</li>
           </ul>
         </section>
-        <section class="main-section" id="cuarta-seccion">
-          <header>cuarta seccion</header>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-          <code>1234</code>
+        <section class="main-section" id="caracteriticas_de_javascript">
+          <header>Caracteristicas de JavaScript</header>
+          <p>
+            JavaScript fue ideado para dotar a la web de capacidades
+            interactivas que le ayudarán a dar el salto al siguiente nivel
+            permitiendo crear una interfaz de usuario activa, lo que ofrece
+            retroalimentación a los visitantes según navegan por sus páginas.
+            Por ejemplo, es común usar JavaScript en la validación de
+            formularios para asegurarnos que la información introducida es
+            válida. Sin necesidad de enviar ninguna información al servidor, el
+            programa realiza los cálculos necesarios ahorrando tiempo y recursos
+            del lado del servidor. Con JavaScript podemos crear sobre la marcha
+            páginas HTML personalizadas, dependiendo de las acciones ejecutadas
+            por el usuario. Supongamos que estamos en una web de seguros, con
+            JavaScript podemos realizar consultas en el servidor sin necesidad
+            de recargar la página, mostrar opciones personalizadas, etc y lanzar
+            eventos en función del día y hora en donde nos encontremos..
+          </p>
         </section>
-        <section class="main-section" id="quinta-seccion">
-          <header>quinta seccion</header>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-          <code>1234</code>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <section class="main-section" id="fundamentos">
+          <header>Fundamentos</header>
+          <p>
+            Para entender JavaScript y sus fundamentos debemos pensar en éste
+            como un lenguaje de escritura de guiones (lenguaje de scripting). Un
+            guión Script es un programa que está contenido internamente dentro
+            de una página HTML (que es el método original de escribir guiones) o
+            reside en un archivo externo (el método preferido actualmente).
+          </p>
+          <p>
+            En las páginas HTML, como está incluido en la etiqueta
+            <code>&lt;script&gt;</code>, el texto del guión no aparece en la
+            pantalla del usuario, y el navegador web es el que ejecuta el
+            programa JavaScript.
+          </p>
+
+          <p>La etiqueta <code>&lt;script&gt;</code> se encuentra muy a menudo dentro de la sección <head> de la página HTML, pero también puede incluir guiones, si lo desea, en la sección <body>.
+            </p>
+
+            <figure>
+              <img src="https://dc722jrlp2zu8.cloudfront.net/media/cache/6d/99/6d99c4106055e771de7922c07fa907aa.webp" alt="html structure" class="htmlimg">
+            </figure>
+
+            <p>Programar en JavaScript es ridículamente fácil pues se trata de un lenguaje muy tolerante para todo lo que queramos hacer. Esto hace que podamos usar diferentes técnicas para poder hacer nuestro código lo más eficiente posible. En otras palabras el lenguaje se adapta a tu estilo de programación. Pero siendo sincero no vas a aprender JavaScript en una semana, posiblemente te tome más de 6 meses en entender el lenguaje y las herramientas para crear aplicaciones increíbles. El esfuerzo es algo que valdrá totalmente la pena y vas a estar en un viaje de aprendizaje increíble.</p>
         </section>
-        <section class="main-section" id="sexta-seccion">
-          <header>sexta seccion</header>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <section class="main-section" id="conceptos-basicos">
+          <header>Conceptos basicos</header>
+          <p>Programar en JavaScript es muy sencillo. Muchas de sus características son comunes para la mayoría de lenguajes de programación por lo que si ya tienes experiencia con otros lenguajes encontrarás JavaScript muy familiar.</p>
+          <p>Por ejemplo, declarar variables - contenedores en los que puedes almacenar valores - es un buen ejemplo. Primero declaramos la variable con la palabra clave <code>var</code> , seguida del nombre que le quieras dar:</p>
+          <pre>var nombreVariable;</pre>
+          <p>Tras declarar una variable, asignamos un valor:</p> <br>
+          <pre>nombreVariable = 'pato';</pre> <br>
+          <p>Y por supuesto podemos ahorrar tiempo si hacemos las dos cosas a la vez:</p> <br>
+          <pre>var nombreVariable = 'pato';</pre> <br>
+          <p>A partir de aquí vamos definiendo nuestro Script con una lista de enunciados que se van ejecutando a medida que se cargan pero, para organizar mejor nuestro código, podemos necesitar estructuras de flujo control de para su ejecución estableciendo caminos o rutas alternativas. Es decir, según un supuesto, que nuestro programa tome un camino u otro. Para permitir esto existen las estructuras condicionales.</p> <br>
+          <pre><code>if … else
+          </code></pre>
+          <p>Se trata de la estructura de control más simple. Básicamente lo que decimos es que sí se cumple una condición se tomará un camino y en caso que no se cumpla tomará otro camino alternativo.</p>
+          <p>La sintaxis de esta estructura es la siguiente:</p>
+ <pre>if(condición){
+    <code>//si se cumple la condición</code>
+    } else {
+     <code> //si NO se cumple la condición</code>
+         }</pre>
+
+          <p>Claro está que si necesitamos concatenar diferentes If...else nuestro árbol de decisión puede ser un poco complicado de mantener por lo que se suele ser más efectivo emplear la estructura condicional conocida como switch.</p>
+        </section>
+
+        <section class="main-section" id="switch">
+          <header>Switch</header>
+          <p>Por medio de switch se puede listar una serie de bloques de enunciados que se ejecuten dependiendo del valor de una variable. Esto resulta en un manejo mucho más eficiente de nuestro código.</p>
+          <p>La sintaxis sería:</p>
+ <pre>switch (variable){
+       case(valor1):
+        #código
+        break;
+         case(valor2):
+        #código
+        break;
+         case(valor3):
+        #código
+          break;
+        default:
+  #código a ejecutar cuando el valor no
+  coincida con ninguno de los anteriores
+        break;
+        }
+        </pre>
+
+          <p>Nota: break indica que el bloque de código puede dejar de interpretarse cuando se haya dado una coincidencia. default es opcional.</p>
         </section>
       </main>
     </div>
