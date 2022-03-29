@@ -4,65 +4,145 @@
 }
 
 body {
-  background-color: #ece8e1;
-  font-family: "roboto", san-serif;
-  color: white;
+background: #4CA1AF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #C4E0E5, #4CA1AF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #C4E0E5, #4CA1AF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+font-family: "roboto", san-serif;
+ color: white;
+ 
 }
 
-#contenedor {
+#main {
   width: 100%;
   max-width: 1920px;
-  margin: 20px auto;
-  display: grid;
+  margin: 0px auto;
+   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%,15rem), 1fr));
   grid-template-rows: repeat(5, auto);
-
-  grid-template-areas:
-    "header header"
-    "img-div img-div"
-    "tribute-info foto"
-    "tribute-link tribute-link"
-    "footer footer";
+  grid-template-areas: "title title"
+                        "img-div img-div"
+                       "tribute-info tribute-link " 
+                        "lista lista"
+                        "footer footer";
 }
-#contenedor div,
-header,
-sidebar {
-  background: #ff4655;
-  padding: 25px;
-  border-radius: 4px;
-  text-align: end;
-}
-
-#contenedor header {
-  background: black;
+#title {
+  grid-area: title;
+  background:black;
   color: white;
-  grid-area: header;
-}
-
-#contenedor img-div {
-  grid-area: img-div;
-}
-
-#contenedor tribute-info {
-  grid-area: tribute-info;
-}
-
-#fviper {
-  grid-area: foto;
-}
-#contenedor tribute-link {
-  grid-area: tribute-link;
   display: flex;
-  text-align: center;
-  align-items: center;
   justify-content: center;
-  color: red;
+  align-items: center;
+  text-align:: center;
+}
+h1{
+  height: 100px;
+}
+                        
+#img-div {
+  grid-area: img-div;
+  border-radius: 4px;
+}
+#img-caption{
+  text-align: center;
+  color: black;
+  background: white;
+  border-radius: 4px;
+}
+#tribute-info 
+{
+  background: #ff4655;
+  padding: 15px;
+  border-radius: 4px;
+  grid-area: tribute-info;
+  
 }
 
-#contenedor footer {
-  background: #233e81;
-  padding: 20px;
+#tribute-link
+
+{
+  background-image: url("https://c.tenor.com/I4TCUl59XoQAAAAC/valorant-heroes.gif");
+  background-color: transparent;
+  background-position: center 20%;
+  padding: 20px ;
+  margin: 0px;
   border-radius: 4px;
-  grid-area: footer;
+  grid-area: tribute-link;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-decoration:none;
+  text-align: center;
+  color: #ff4655;
+  font-size: 40px ;
+
 }
+
+#lista{
+  grid-area:lista;
+  margin: 20px 0px 20px 0px;
+  color: black;
+  padding: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align:: center;
+ }
+#tabla{
+  border: 4px solid #1C6EA4;
+  margin: 40px 0px 40px 0px;
+  background-color: #EEEEEE;
+  width: 100%;
+  color: black;
+  text-align: center;
+  border-collapse: collapse;
+  font-family: "roboto", san-serif;
+  font-weight: 560;
+}
+#p1{
+  background: #233e81;
+  padding: 15px;
+  border-radius: 4px;
+  grid-area: tribute-info;}
+
+
+#p2{
+  background: white;
+  color:black;
+  padding: 15px;
+  border-radius: 4px;
+  grid-area: tribute-info;
+  font-weight: 700;
+}
+
+
+
+#image{
+  display:block;
+  max-width: 100%;
+}
+
+caption{
+  font-family: "roboto", san-serif;
+  background: white;
+  font-weight: 800;
+  border: 3px solid #1C6EA4;
+  
+}
+
+
+footer {
+  background: #233e81;
+  color: white;
+  padding: 20px ;
+  margin: 10px 0px -10px 0px;
+  border-radius: 4px;
+  grid-area: footer;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align:: center;
+}
+
