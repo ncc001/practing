@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/640a139019.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="styles.css" />
     <title>Portafolio NCC</title>
   </head>
@@ -14,88 +18,80 @@
           <h2 class="logo_ncc">Nelson Carrion</h2>
         </div>
 
-        <nav class="nav-bar">
+        <nav id="navbar">
           <ul class="nav-list">
-            <li class="nav-items"><a href="" class="navlink">about</a></li>
-            <li class="nav-items"><a href="" class="navlink">work</a></li>
-            <li class="nav-items"><a href="" class="navlink">contact</a></li>
+            <li class="nav-items">
+              <a href="#welcome-section" class="navlink">about</a>
+            </li>
+            <li class="nav-items">
+              <a href="#projects" class="navlink">work</a>
+            </li>
+            <li class="nav-items">
+              <a href="#profile-link" class="navlink">contact</a>
+            </li>
           </ul>
         </nav>
       </header>
       <main class="mainpage">
-        <section class="welcome">
+        <section id="welcome-section">
           <div class="welcome-text">
             <h1 class="titulo">Hey, Soy Ncc</h1>
             <p class="subtitulo">a web developer</p>
           </div>
         </section>
 
-        <section class="work">
-          <div class="box1">
+        <section class="work" id="projects">
+          <div class="project-tile">
             <img
-              src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_1280/https://empila2.ga/wp-content/uploads/2022/03/IMAGE..jpeg"
+              src="https://i.ibb.co/RYK5WWc/2.png "
               alt=""
               class="img_cards"
             />
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Incidunt, placeat?
-            </p>
+            <a
+              href="https://codepen.io/ncc001/full/podXbVg"
+              target="_blank"
+              class="aprojects"
+              ><p>Tribute Page</p></a
+            >
           </div>
           <div class="box2">
             <img
-              src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_1280/https://empila2.ga/wp-content/uploads/2022/03/IMAGE..jpeg"
+              src="https://i.ibb.co/GMmjX9K/1.png"
               alt=""
               class="img_cards"
             />
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Incidunt, placeat?
-            </p>
+            <a
+              href="https://codepen.io/ncc001/full/qBpBXgo"
+              target="_blank"
+              class="aprojects"
+              ><p>Form Page</p></a
+            >
           </div>
           <div class="box3">
             <img
-              src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_1280/https://empila2.ga/wp-content/uploads/2022/03/IMAGE..jpeg"
+              src="https://i.ibb.co/fnXyTq1/4.png"
               alt=""
               class="img_cards"
             />
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Incidunt, placeat?
-            </p>
+            <a
+              href="https://codepen.io/ncc001/full/MWraWEr"
+              target="_blank"
+              class="aprojects"
+              ><p>Landing Page</p></a
+            >
           </div>
           <div class="box4">
             <img
-              src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_1280/https://empila2.ga/wp-content/uploads/2022/03/IMAGE..jpeg"
+              src="https://i.ibb.co/Z8Yv6pf/3.png"
               alt=""
               class="img_cards"
             />
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Incidunt, placeat?
-            </p>
-          </div>
-          <div class="box5">
-            <img
-              src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_1280/https://empila2.ga/wp-content/uploads/2022/03/IMAGE..jpeg"
-              alt=""
-              class="img_cards"
-            />
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Incidunt, placeat?
-            </p>
-          </div>
-          <div class="box6">
-            <img
-              src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_1280/https://empila2.ga/wp-content/uploads/2022/03/IMAGE..jpeg"
-              alt=""
-              class="img_cards"
-            />
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Incidunt, placeat?
-            </p>
+            <a
+              href="https://codepen.io/ncc001/full/dyJMLoa"
+              target="_blank"
+              class="aprojects"
+              ><p>Technical Documentation Page</p></a
+            >
           </div>
         </section>
 
@@ -106,14 +102,29 @@
           </div>
 
           <div class="contactlinks">
-            <a href=""><i></i></a>
-            <a href=""><i></i></a>
-            <a href=""><i></i></a>
+            <a
+              href="https://github.com/ncc001"
+              target="_blank"
+              id="profile-link"
+              ><i class="fa-brands fa-github"></i>github</a
+            >
+            <a
+              href="https://www.freecodecamp.org/fcce056af18-2d45-4503-b7fb-56d947a95aab"
+              target="_blank"
+              id="profile-link"
+              ><i class="fa-brands fa-free-code-camp"></i>FreeCodeCamp</a
+            >
+            <a
+              href="https://www.linkedin.com/in/nelson-carrion"
+              target="_blank"
+              id="profile-link"
+              ><i class="fa-brands fa-github"></i>linkedin</a
+            >
           </div>
         </section>
       </main>
       <footer class="footersection">
-        <h3>ncc webs</h3>
+        <h3 class="footertext">ncc webs</h3>
       </footer>
     </div>
   </body>

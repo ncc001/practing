@@ -1,5 +1,8 @@
 :root {
   --fuente: "Roboto", sans-serif;
+  --color-textos: #60fcf1;
+  --color-sections: #202833;
+  --color-fuerte: #0b0c10;
 }
 
 * {
@@ -10,10 +13,9 @@
 
 .conteiner {
   display: grid;
-  width: 95vw;
-  padding: auto;
+  width: 90vw;
   margin: auto;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 25rem), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr));
 }
 
 .header {
@@ -24,30 +26,32 @@
   height: 5vh;
   align-items: center;
   overflow: hidden;
-  background-color: red;
+  background-color: var(--color-sections);
+  box-shadow: 0px 2px 1px var(--color-fuerte);
   padding: 0 2.1875rem;
+  margin: auto;
+  font-size: 1rem;
+  color: #fff;
+  position: sticky;
+  top: 0;
 }
 
 .logo {
-  width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin: auto;
 }
 
 .logo_ncc {
   text-transform: uppercase;
-  color: #fff;
-  font-size: 2.5vw;
+  font-size: 1rem;
 }
 
 .nav-list {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  font-size: 2.5vw;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -60,36 +64,52 @@
 
 .mainpage {
   grid-column: 1/-1;
-
   height: 100%;
 }
-.welcome {
-  background: green;
-  height: 60vh;
-  color: white;
+#welcome-section {
+  background-image: linear-gradient(
+      to right,
+      rgba(32, 40, 51, 1),
+      rgba(54, 5, 40, 0.466)
+    ),
+    url(https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80);
+  background-size: cover;
+  background-position: 30%;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 
 .welcome-text {
-  padding: 0;
+  padding: auto;
   line-height: 2;
+  font-weight: bold;
+  font-size: 2rem;
+  color: var(--color-textos);
 }
 
 .subtitulo {
   padding: 0.625rem;
+  color: #fff;
+  font-weight: normal;
+  font-style: oblique;
 }
 
 .work {
   display: grid;
-  width: 100%;
-  /* max-width: 1500px; */
+  max-width: 1100px;
   gap: 1.25rem;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 35rem), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 25rem), 1fr));
+
   padding: 20px 20px;
-  margin: 10px auto;
-  box-shadow: 1px 2px 3px;
+  margin: 30px auto;
+  -webkit-box-shadow: 2px 5px 10px 2px var(--color-sections);
+  box-shadow: 2px 5px 10px 2px var(--color-sections);
   border-radius: 12px;
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
@@ -97,73 +117,82 @@
   -o-border-radius: 12px;
 }
 
-.box1 {
+.project-tile {
   background-color: snow;
-  box-shadow: 2px 2px 1px orange;
+  box-shadow: 2px 2px 1px var(--color-textos);
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+  overflow: hidden;
 }
 
 .box2 {
   background-color: snow;
-  background-color: snow;
-  box-shadow: 2px 2px 1px orange;
+  box-shadow: 2px 2px 1px var(--color-textos);
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+  overflow: hidden;
 }
 
 .box3 {
   background-color: snow;
-  background-color: snow;
-  box-shadow: 2px 2px 1px orange;
+  box-shadow: 2px 2px 1px var(--color-textos);
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+  overflow: hidden;
 }
 
 .box4 {
   background-color: snow;
-  background-color: snow;
-  box-shadow: 2px 2px 1px orange;
+  box-shadow: 2px 2px 1px var(--color-textos);
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+  overflow: hidden;
 }
 
 .box5 {
   background-color: snow;
-  background-color: snow;
-  box-shadow: 2px 2px 1px orange;
+  box-shadow: 2px 2px 1px var(--color-textos);
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+  overflow: hidden;
 }
 
 .box6 {
   background-color: snow;
-  background-color: snow;
-  box-shadow: 2px 2px 1px orange;
+  box-shadow: 2px 2px 1px var(--color-textos);
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+  overflow: hidden;
 }
 
 .img_cards {
   width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: bottom;
+  border-radius: 20px 20px 0px 0px;
+  -webkit-border-radius: 20px 20px 0px 0px;
+  -moz-border-radius: 20px 20px 0px 0px;
+  -ms-border-radius: 20px 20px 0px 0px;
+  -o-border-radius: 20px 20px 0px 0px;
 }
 
 p {
@@ -171,5 +200,62 @@ p {
   margin: 0.9375rem auto;
   color: red;
   text-align: center;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 0.5;
+  align-items: center;
+  background: var(--color-sections);
+  height: 15vh;
+  text-align: center;
+
+  overflow: hidden;
+}
+
+.header-contact {
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+[class^="fa"] {
+  color: white;
+  font-size: 15px;
   display: inline-block;
+  font-family: "Font Awesome 5 Brands";
+  padding: 0 10px;
+}
+
+.contactlinks {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#profile-link,
+.aprojects {
+  color: white;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.footersection {
+  grid-column: 1/-1;
+  background-color: var(--color-fuerte);
+  height: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footertext {
+  text-align: center;
+  color: #fff;
+  text-decoration: double;
+  text-transform: uppercase;
+  font-size: 10px;
 }
